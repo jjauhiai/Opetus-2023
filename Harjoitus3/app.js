@@ -4,6 +4,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
+const basicAuth = require('express-basic-auth');
+
 
 
 var bookRouter = require('./routes/book');
@@ -19,8 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet());
 app.use(cors());
-
-
+app.use(basicAuth({users: { 'admin': '1234' }}))
 app.use('/book', bookRouter);
 app.use('/borrower', borrowerRouter);
 app.use('/user', userRouter);
