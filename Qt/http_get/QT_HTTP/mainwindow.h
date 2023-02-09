@@ -10,6 +10,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -21,7 +22,12 @@ public:
 private slots:
     void on_btnShowBooks_clicked();
 private slots:
-    void getBookSlot (QNetworkReply *reply);
+    void getBookSlot (QNetworkReply *);
+    void addBookSlot (QNetworkReply *);
+    void updateBookSlot (QNetworkReply *);
+    void on_btnAddBook_clicked();
+
+    void on_btnUpdateBook_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -17,10 +17,10 @@
    <widget class="QPushButton" name="btnShowBooks">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>30</y>
-      <width>291</width>
-      <height>71</height>
+      <x>20</x>
+      <y>10</y>
+      <width>181</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -29,17 +29,53 @@
      </font>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Get Books</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="textBooks">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>10</x>
       <y>130</y>
-      <width>291</width>
+      <width>391</width>
       <height>251</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddBook">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Add a Book</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpdateBook">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>40</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Update Book</string>
     </property>
    </widget>
   </widget>
